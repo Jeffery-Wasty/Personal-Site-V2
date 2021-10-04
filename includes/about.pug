@@ -1,0 +1,19 @@
+section.about(aria-modal="true" aria-labelledby="dialog1Title" role="dialog")
+  .common-wrapper
+    .about-wrapper
+      .about-left
+        .about-bio(data-sal="slide-down" data-sal-duration="1000" data-sal-easing="ease-out-cubic")
+          h2.about-subheading(id="dialog1Title")
+            | My name is Jeff and I’m a software engineer currently living in Vancouver.
+            | I have experience through several co-ops building apps for internal and external use.
+          p.about-copy
+            | Throughout my time as a software engineer, my goal has always been to deliver fully-functional and visually compelling products,
+            | that remain easy to use and understand. My career has given me the opportunity to reach 
+            | this goal through a number of languages, technologies, and frameworks, and I continue to learn new ways to convey my passion. 
+          p.about-copy
+            | Outside of work I enjoy all kinds of activities including tennis, hiking, and playing video games.
+          p.about-copy.about-plug
+            | <strong>Get in touch at <a href="mailto:jeff.wasty@gmail.com">jeff.wasty@gmail.com</a></strong>
+      .about-right
+        img.about-pic(load="lazy" alt="Jeff's smiling face." src="./img/jeffery-wasty-sq.jpeg" data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease-out-cubic")
+  button.about-btn(type="button" id="about-btn-close") Close

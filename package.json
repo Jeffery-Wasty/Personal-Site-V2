@@ -1,0 +1,35 @@
+{
+  "name": "jeffery-wasty-site",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.pug",
+    "build": "parcel build index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeffery-Wasty/Personal-Website-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeffery-Wasty/Personal-Website-v2/issues"
+  },
+  "homepage": "https://github.com/Jeffery-Wasty/Personal-Website-v2#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.32.6"
+  },
+  "browserslist": [
+    "since 2019-06"
+  ],
+  "dependencies": {
+    "body-scroll-lock": "^2.7.1",
+    "is-mobile": "^2.2.2",
+    "sass-mq": "^5.0.1",
+    "svg.js": "^2.7.1"
+  }
+}

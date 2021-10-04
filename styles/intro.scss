@@ -1,0 +1,149 @@
+.intro {
+  align-items: flex-end;
+  display: flex;
+  height: 564px;
+  padding-bottom: 36px;
+
+  @include mq($from: desktop) {
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  &-wrapper {
+    @include mq($from: desktop) {
+      max-width: 994px;
+      text-align: center;
+    }
+  }
+
+  &-left {
+    animation: fadeInUp 1s var(--ease-out-cubic) forwards;
+    opacity: 0;
+  }
+
+  &-heading,
+  &-subheading {
+    position: relative;
+
+    &.js-scroll-animate {
+      &::before {
+        transform: scaleY(0);
+      }
+    }
+
+    &::before {
+      background: var(--background-color);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform-origin: center bottom;
+      transition: all 1s var(--ease-in-out-cubic);
+      width: 100%;
+    }
+  }
+
+  &-heading {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 24px;
+
+    @include mq($from: desktop) {
+      font-size: 52px;
+      margin: 0 0 36px;
+    }
+
+    @include mq($from: wide) {
+      font-size: 64px;
+    }
+  }
+
+  &-subheading {
+    font-size: 24px;
+    line-height: 1.4;
+    opacity: 0.7;
+
+    @include mq($from: desktop) {
+      font-size: 40px;
+    }
+
+    @include mq($from: wide) {
+      font-size: 48px;
+    }
+  }
+
+  &-scroll-indicator {
+    display: none;
+
+    @include mq($from: desktop) {
+      align-items: center;
+      animation: fadeIn 1.4s var(--ease-out-cubic) forwards;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      left: 50%;
+      opacity: 0;
+      position: absolute;
+      transition: all 0.35s var(--ease-out-cubic);
+
+      &--hide {
+        transform: translateY(18%);
+
+        .intro-scroll-indicator-line {
+          transform: scaleY(0);
+        }
+
+        .intro-scroll-indicator-text {
+          opacity: 0;
+        }
+      }
+
+      &-line {
+        background: rgba(255, 255, 255, 0.5);
+        height: 84px;
+        overflow: hidden;
+        position: relative;
+        transform-origin: center bottom;
+        transition: all 0.6s var(--ease-in-out-cubic);
+        width: 1px;
+
+        &::before {
+          animation: scrollIndicator 1.2s linear infinite;
+          background: white;
+          content: '';
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 1px;
+        }
+      }
+
+      &-text {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        transition: all 0.5s var(--ease-out-cubic);
+      }
+    }
+  }
+}
+
+@keyframes scrollIndicator {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
