@@ -1,3 +1,3 @@
 # Jeffery Wasty
 
-A quick improvement to my existing website.s
+A quick improvement to my existing website.
