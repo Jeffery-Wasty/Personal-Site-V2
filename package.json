@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jeffery-Wasty/Personal-Website-v2.git"
+    "url": "git+https://github.com/Jeffery-Wasty/Personal-Site-v2.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jeffery-Wasty/Personal-Website-v2/issues"
+    "url": "https://github.com/Jeffery-Wasty/Personal-Site-v2/issues"
   },
-  "homepage": "https://github.com/Jeffery-Wasty/Personal-Website-v2#readme",
+  "homepage": "https://github.com/Jeffery-Wasty/Personal-Site-v2#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4",
