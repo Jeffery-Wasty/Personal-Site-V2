@@ -1,7 +1,7 @@
 {
   "name": "jeffery-wasty-site",
   "version": "1.0.0",
-  "description": "My personal website.",
+  "description": "My personal site.",
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.pug",
